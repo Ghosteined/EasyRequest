@@ -1,8 +1,13 @@
 # EasyRequest
 Make request easily with an interface in one powershell line.
 This was entirely videcoded because I needed to test a server.
-Just use ```iex (iwr "https://pastebin.com/raw/H3N3SVR8")```, it uses a pastbin link that contains:
+Just use:
+```powershell
+iex (iwr "https://pastebin.com/raw/H3N3SVR8")
 ```
+
+It uses a pastbin link that contains:
+```powershell
 # PowerShell loader that fetches Python code from a second Pastebin URL
 $pyRawUrl = "https://pastebin.com/raw/CfdK8rq2"  # Replace with your actual Python code Pastebin
 $pyCode = Invoke-WebRequest -Uri $pyRawUrl
@@ -12,7 +17,7 @@ python -c "import base64; exec(base64.b64decode('$base64'))"
 ```
 
 This powershell script itself runs in python the content of a pastbin which is:
-```
+```python
 import tkinter as tk
 from tkinter import scrolledtext, messagebox
 import requests, json
